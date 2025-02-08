@@ -36,7 +36,7 @@
 
 #pagebreak()
 
-= Mathe Spickzettel
+= Mathe Spickzettel zum Lernen
 
 Das ist mein einfacher Mathe-Spickzettel.
 
