@@ -38,7 +38,7 @@
 
 = Mathe Spickzettel zum Lernen
 
-Das ist mein einfacher Mathe-Spickzettel.
+Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvollständig.
 
 #pagebreak()
 
