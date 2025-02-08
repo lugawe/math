@@ -1,0 +1,23 @@
+name: Generate PDF from Typst
+
+on:
+    push:
+        paths:
+            - "**.typ"
+
+jobs:
+    generate-pdf:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: typst-community/setup-typst@v4
+
+            - name: Compile math.typ
+              run: typst compile math.typ spickzettel.pdf
+
+            - uses: actions/upload-artifact@v4
+              with:
+                  name: Spickzettel PDF
+                  path: spickzettel.pdf
