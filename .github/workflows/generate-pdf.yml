@@ -3,7 +3,7 @@ name: Generate PDF from Typst
 on:
     push:
         paths:
-            - "**.typ"
+            - "math.typ"
 
 jobs:
     generate-pdf:
