@@ -123,26 +123,35 @@ Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvo
 
 Oder auch "ableiten" genannt.
 
-Ein paar Beispiele:
+Ein paar Regeln und Beispiele:
 
 #highlight1([
   $ f(x) = a #h(1cm) f'(x) = 0 $
 ])
 
 #highlight2([
-  $ f(x) = x^n #h(1cm) f'(x) = n * x^(n - 1) $
+  $ f(x) = x^a #h(1cm) f'(x) = a dot x^(a - 1) $
 ])
 
 #highlight1([
-  $ f(x) = g(x) * h(x) #h(1cm) f'(x) = g'(x) * h(x) + g(x) * h'(x) $
+  $ f(x) = a^x #h(1cm) f'(x) = a^x dot ln(a) #h(1cm) "für" a > 0 "und" a eq.not 1 $
 ])
 
 #highlight2([
-  $ f(x) = g(x) / h(x) #h(1cm) f'(x) = (g'(x) * h(x) - h'(x) * g(x)) / h(x)^2 $
+  $ f(x) = g(x)^h(x) #h(1cm)
+    f'(x) = g(x)^h(x) dot ( h'(x) dot ln(g(x)) + h(x) dot (g'(x)) / (g(x)) ) $
 ])
 
 #highlight1([
-  $ f(x) = g(h(x)) #h(1cm) f'(x) = h'(x) * g'(h(x)) $
+  $ f(x) = g(x) dot h(x) #h(1cm) f'(x) = g'(x) dot h(x) + g(x) dot h'(x) $
+])
+
+#highlight2([
+  $ f(x) = g(x) / h(x) #h(1cm) f'(x) = (g'(x) dot h(x) - g(x) dot h'(x)) / h(x)^2 $
+])
+
+#highlight1([
+  $ f(x) = g(h(x)) #h(1cm) f'(x) = h'(x) dot g'(h(x)) $
 ])
 
 #highlight2([
