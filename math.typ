@@ -54,10 +54,14 @@ Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvo
   $ a^(b - c) = a^b / a^c $
 ])
 
+#highlight1([
+  $ (a^b)^c = a^(b dot c) $
+])
+
 == Wurzelgesetze
 
 #highlight1([
-  $ sqrt(a * b) = sqrt(a) * sqrt(b) $
+  $ sqrt(a dot b) = sqrt(a) dot sqrt(b) $
 ])
 
 #highlight2([
@@ -71,11 +75,11 @@ Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvo
 == Logarithmusgesetze
 
 #highlight1([
-  $ log_a (b * c) = log_a (b) * log_a (c) $
+  $ log_a (b dot c) = log_a (b) dot log_a (c) $
 ])
 
 #highlight2([
-  $ log_a (b^n) = log_a (b) * n $
+  $ log_a (b^n) = log_a (b) dot n $
 ])
 
 #highlight1([
@@ -83,7 +87,7 @@ Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvo
 ])
 
 #highlight2([
-  $ log_a (root(n, b)) = 1 / n * log_a (b) $
+  $ log_a (root(n, b)) = 1 / n dot log_a (b) $
 ])
 
 #pagebreak()
@@ -91,11 +95,11 @@ Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvo
 == Umformungen
 
 #highlight1([
-  $ (a / b) / (c / d) = (a * d) / (b * c) $
+  $ (a / b) / (c / d) = (a dot d) / (b dot c) $
 ])
 
 #highlight2([
-  $ a^b = e^(b * ln(a)) $
+  $ a^b = e^(b dot ln(a)) $
 ])
 
 == Formeln
@@ -179,11 +183,11 @@ Oder auch "aufleiten" oder "Stammfunktion finden" genannt. Wenn man alle Stammfu
 Ein paar Beispiele:
 
 #highlight1([
-  $ f(x) = a #h(1cm) F(x) = a * x $
+  $ f(x) = a #h(1cm) F(x) = a dot x $
 ])
 
 #highlight2([
-  $ f(x) = x^n #h(1cm) F(x) = (1 / n) * x^(n + 1) $
+  $ f(x) = x^a #h(1cm) F(x) = (1 / a) dot x^(a + 1) $
 ])
 
 #highlight1([
@@ -191,7 +195,7 @@ Ein paar Beispiele:
 ])
 
 #highlight2([
-  $ f(x) = ln(x) #h(1cm) F(x) = x * ln(x) - x $
+  $ f(x) = ln(x) #h(1cm) F(x) = x dot ln(x) - x $
 ])
 
 #pagebreak()
@@ -201,5 +205,5 @@ Ein paar Beispiele:
 Die Formel:
 
 #highlight1([
-  $ T_f (x; a) := sum_(n=0)^∞ (f^(\(n\)) (a)) / (n!) * (x - a)^n $
+  $ T_f (x; a) := sum_(n=0)^∞ (f^(\(n\)) (a)) / (n!) dot (x - a)^n $
 ])
