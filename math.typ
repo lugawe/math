@@ -151,7 +151,7 @@ Ein paar Regeln und Beispiele:
 ])
 
 #highlight1([
-  $ f(x) = g(h(x)) #h(1cm) f'(x) = h'(x) dot g'(h(x)) $
+  $ f(x) = g(h(x)) #h(1cm) f'(x) = g'(h(x)) dot h'(x) $
 ])
 
 #highlight2([
@@ -159,7 +159,7 @@ Ein paar Regeln und Beispiele:
 ])
 
 #highlight1([
-  $ f(x) = tan(x) #h(1cm) f'(x) = 1 / cos(x)^2 $
+  $ f(x) = tan(x) #h(1cm) f'(x) = 1 / cos(x)^2 = 1 + tan(x)^2 $
 ])
 
 #highlight2([
