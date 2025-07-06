@@ -69,7 +69,7 @@ Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvo
 ])
 
 #highlight1([
-  $ root(b, x^a) = x^(a / b) $
+  $ root(b, x^a) = x^(a / b) #h(1cm) 1 / root(b, x^a) = x^(-a / b)  $
 ])
 
 == Logarithmusgesetze
@@ -108,6 +108,19 @@ Das ist mein einfacher Mathe-Spickzettel. Er wird laufend erweitert und ist unvo
   $ a x^2 + b x + c = 0 #h(1cm) x_(1,2) = (-b ± sqrt(b^2 - 4 a c)) / (2 a) $
 ])
 
+== Potenzreihen
+
+#highlight2([
+  $ sin(x) = sum_(n = 0) ^ infinity (-1)^n dot (x^(2n + 1)) / (2n + 1)! $
+])
+
+#highlight1([
+  $ cos(x) = sum_(n = 0) ^ infinity (-1)^n dot (x^(2n)) / (2n)! $
+])
+
+#highlight2([
+  $ e^x = sum_(n = 0) ^ infinity (x^n) / n! $
+])
 
 #pagebreak()
 
@@ -134,11 +147,11 @@ Ein paar Regeln und Beispiele:
 ])
 
 #highlight2([
-  $ f(x) = x^a #h(1cm) f'(x) = a dot x^(a - 1) $
+  $ f(x) = g(x)^a #h(1cm) f'(x) = a dot g(x)^(a - 1) dot g'(x) $
 ])
 
 #highlight1([
-  $ f(x) = a^x #h(1cm) f'(x) = a^x dot ln(a) #h(1cm) "für" a > 0 "und" a eq.not 1 $
+  $ f(x) = a^(g(x)) #h(1cm) f'(x) = a^(g(x)) dot ln(a) dot g'(x) #h(1cm) "für" a > 0 "und" a eq.not 1 $
 ])
 
 #highlight2([
@@ -191,10 +204,14 @@ Ein paar Beispiele:
 ])
 
 #highlight1([
-  $ f(x) = e^x #h(1cm) F(x) = e^x $
+  $ f(x) = a^(m x + t) #h(1cm) F(x) = 1 / (m dot ln(a)) dot a^(m x + t) $
 ])
 
 #highlight2([
+  $ f(x) = e^x #h(1cm) F(x) = e^x $
+])
+
+#highlight1([
   $ f(x) = ln(x) #h(1cm) F(x) = x dot ln(x) - x $
 ])
 
@@ -205,5 +222,7 @@ Ein paar Beispiele:
 Die Formel:
 
 #highlight1([
-  $ T_f (x; a) := sum_(n=0)^∞ (f^(\(n\)) (a)) / (n!) dot (x - a)^n $
+  $ T_f (x; a) := sum_(n=0)^ infinity (f^(\(n\)) (a)) / (n!) dot (x - a)^n $
 ])
+
+
